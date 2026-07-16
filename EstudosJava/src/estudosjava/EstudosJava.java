@@ -30,9 +30,17 @@ public class Main {
                 System.out.printf("A subtracao de %d - %d é %d %n", num1, num2, subtracao);
                 break;
             }
+            case "3":{
+                System.out.println("Digite o número a ser dividido");
+                int dividendo =reader.nextInt();
+                System.out.println("Digite por qual número ele será dividido");
+                int divisor = reader.nextInt();
+                int quociente = dividendo / divisor;
+                System.out.printf("O resultado de %d dividido por %d é %d", dividendo, divisor, quociente);
+            }
             default:
                 System.out.println("Opcao Invalida!");
         }
         reader.close();
-    }
+    }    }
 }
