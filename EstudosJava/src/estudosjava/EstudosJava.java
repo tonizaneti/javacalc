@@ -3,10 +3,9 @@ import java.util.Scanner;
 
 public class Main4 {
     public static void main(String[]     args){
-        // TODO code application logic here
         Scanner reader =new Scanner(System.in);
 
-        System.out.println("Digite o numero da operacao a ser realizada: \n 1- Adicao \n2-Subtracao \n3-Divisao \n4-Multiplicacao");
+        System.out.println("Digite o numero da operacao a ser realizada: \n1- Adicao \n2-Subtracao \n3-Divisao \n4-Multiplicacao");
         String op= reader.nextLine();
         switch(op){
             case "1":{
@@ -37,6 +36,7 @@ public class Main4 {
                 int divisor = reader.nextInt();
                 int quociente = dividendo / divisor;
                 System.out.printf("O resultado de %d dividido por %d é %d", dividendo, divisor, quociente);
+                break;
             }
             case "4":{
                 System.out.println("Digite o número a ser multiplicado");
@@ -44,10 +44,11 @@ public class Main4 {
                 System.out.println("Digite o segundo número a ser multiplicado");
                 int num2 = reader.nextInt();
                 int resultado = num1 * num2;
-                System.out.println("O resultado de %d multiplicado por %d é %d", num1, num2, resultado);
+                System.out.printf("O resultado de %d multiplicado por %d é %d", num1, num2, resultado);
+                break;
             }
             default:
-                System.out.println("Opcao Invalida!");
+                System.out.println("\nOpcao Invalida!");
         }
         reader.close();
     }
