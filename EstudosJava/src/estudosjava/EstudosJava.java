@@ -1,7 +1,7 @@
 package org.example;
 import java.util.Scanner;
 
-public class Main {
+public class Main4 {
     public static void main(String[]     args){
         // TODO code application logic here
         Scanner reader =new Scanner(System.in);
@@ -38,9 +38,17 @@ public class Main {
                 int quociente = dividendo / divisor;
                 System.out.printf("O resultado de %d dividido por %d é %d", dividendo, divisor, quociente);
             }
+            case "4":{
+                System.out.println("Digite o número a ser multiplicado");
+                int num1 = reader.nextInt();
+                System.out.println("Digite o segundo número a ser multiplicado");
+                int num2 = reader.nextInt();
+                int resultado = num1 * num2;
+                System.out.println("O resultado de %d multiplicado por %d é %d", num1, num2, resultado);
+            }
             default:
                 System.out.println("Opcao Invalida!");
         }
         reader.close();
-    }    }
+    }
 }
